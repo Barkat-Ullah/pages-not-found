@@ -7,7 +7,7 @@ body {
 .header-text {
     display: flex;
     font-size: 30px;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-top: 20px;
     font-family: cursive;
 }
@@ -25,6 +25,7 @@ body {
     font-family: cursive;
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .container-description {
@@ -37,7 +38,7 @@ body {
 .primary-btn {
     color: #FFF;
     background-color: black;
-    padding: 20px 35px;
+    padding: 20px 30px;
     font-family: cursive;
     font-size: 14px;
     text-transform: uppercase;
@@ -46,7 +47,42 @@ body {
 }
 
 .image {
-    height: 400px;
-    width: 400px;
+    width: 540px;
+    height: 415px;
 
+}
+
+.footer-text {
+    color: #BDBDBD;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .container-title{
+        margin-left: 25px;
+        font-size: 40px;
+    }
+    .container-description{
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .image {
+        width: 375px;
+        height: 349px;
+        margin-top: 180px;
+    }
+    .primary-btn {
+        margin: 25px;
+    }
+    .footer-text {
+    
+        margin-top: 140px;
+    }
 }
